@@ -47,8 +47,8 @@ export const FilterPanel = ({ onChange }: FilterPanelProps) => {
       </div>
       <p className="error" aria-live="polite">{error}</p>
       <div className="row">
-        <button type="button" onClick={apply}>Применить</button>
-        <button type="button" className="secondary" onClick={reset}>Сбросить</button>
+        <button type="button" className="fullWidth" onClick={apply}>Применить</button>
+        <button type="button" className="secondary fullWidth" onClick={reset}>Сбросить</button>
       </div>
     </div>
   );

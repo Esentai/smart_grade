@@ -74,7 +74,7 @@ h2 {
 
 label {
   display: block;
-  margin: 8px 0 4px;
+  margin: 24px 0 4px;
   font-size: 14px;
 }
 
@@ -91,7 +91,7 @@ button {
   padding: 8px 16px;
   font: inherit;
   color: #fff;
-  background: #4a6cf7;
+  background: #4ebc73;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -110,7 +110,7 @@ button.danger {
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 2px solid #4a6cf7;
+  outline: 2px solid #4ebc73;
   outline-offset: 2px;
 }
 
@@ -185,14 +185,6 @@ td {
   border-bottom: 1px solid #dde2ea;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
 @media (max-width: 1023px) {
   .layout {
     grid-template-columns: 1fr;
@@ -215,4 +207,8 @@ td {
   .sort {
     flex-wrap: wrap;
   }
+}
+
+.fullWidth {
+    width: 100%;
 }

@@ -11,7 +11,7 @@ export const ScoreTable = ({ rows, onRemove, onClear }: ScoreTableProps) => {
     return (
       <div className="card">
         <h2>Оценки</h2>
-        <p className="hint">Список пуст.</p>
+        <p className="hint">Список пуст</p>
       </div>
     );
   }

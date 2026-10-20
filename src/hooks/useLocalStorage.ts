@@ -16,7 +16,7 @@ const readStorage = <T>(key: string, initialValue: T, isValid: Guard<T>) => {
   }
 };
 
-// generic-хук: T - тип хранимого значения, isValid - проверка данных при чтении
+
 export function useLocalStorage<T>(key: string, initialValue: T, isValid: Guard<T>) {
   const [initial] = useState(() => readStorage(key, initialValue, isValid));
   const [value, setValue] = useState<T>(initial.value);

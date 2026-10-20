@@ -10,7 +10,7 @@ export const StatsCards = ({ statistics }: StatsCardsProps) => {
     return (
       <div className="card">
         <h2>Статистика</h2>
-        <p className="hint">Нет данных. Добавьте хотя бы одну оценку.</p>
+        <p className="hint">Нет данных</p>
       </div>
     );
   }

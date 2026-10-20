@@ -13,7 +13,6 @@ export const ScoreForm = ({ onAdd }: ScoreFormProps) => {
   const [score, setScore] = useState('');
   const [error, setError] = useState('');
 
-  // при каждом открытии форма должна быть пустой
   const open = () => {
     setName('');
     setScore('');
@@ -23,7 +22,6 @@ export const ScoreForm = ({ onAdd }: ScoreFormProps) => {
 
   const close = () => dialogRef.current?.close();
 
-  // клик по затемнённому фону попадает в сам <dialog>, а не в форму
   const handleBackdropClick = (e: MouseEvent<HTMLDialogElement>) => {
     if (e.target === dialogRef.current) close();
   };
@@ -52,13 +50,13 @@ export const ScoreForm = ({ onAdd }: ScoreFormProps) => {
           <label htmlFor="name">Имя студента</label>
           <input id="name" value={name} onChange={(e) => setName(e.target.value)} autoFocus />
 
-          <label htmlFor="score">Балл (0–100)</label>
+          <label htmlFor="score">Балл</label>
           <input id="score" value={score} onChange={(e) => setScore(e.target.value)} />
 
           <p className="error" aria-live="polite">{error}</p>
           <div className="row">
-            <button type="submit">Добавить</button>
-            <button type="button" className="secondary" onClick={close}>Отмена</button>
+            <button type="submit" className="fullWidth">Добавить</button>
+            <button type="button" className="secondary fullWidth" onClick={close}>Отмена</button>
           </div>
         </form>
       </dialog>

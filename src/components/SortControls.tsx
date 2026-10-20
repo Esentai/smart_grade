@@ -17,7 +17,7 @@ export const SortControls = ({ sort, onChange }: SortControlsProps) => (
       <option value="name">по имени</option>
     </select>
 
-    <label htmlFor="sort-order" className="visually-hidden">Порядок</label>
+    <label htmlFor="sort-order">Порядок</label>
     <select
       id="sort-order"
       value={sort.order}
